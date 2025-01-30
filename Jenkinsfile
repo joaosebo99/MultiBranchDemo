@@ -40,6 +40,7 @@ pipeline {
            bat('echo "Deployment application..."')
          }
 
- }
+     }
 
+  }
 }
