@@ -36,13 +36,7 @@ pipeline {
   
    	}
 
-     stage("Deploy application") { 
-      
-         steps { 
-           bat('echo "Deployment application..."')
-         }
-
-     }
+    
   
    	}
 
