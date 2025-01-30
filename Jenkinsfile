@@ -6,30 +6,30 @@ pipeline {
    
      stage('Checkout') { 
         steps { 
-         sh  'echo "Checkout code"'
+         bat('echo "Checkout code"')
         }
      }
      
      stage('Compile') { 
         steps { 
-           sh 'echo "compile application..."'
+           bat('echo "compile application..."')
         }
       }
 
         stage('Review') { 
         steps { 
-           sh 'echo "Review application..."'
+           bat('echo "Review application..."')
         }
       }
 
       stage('Test') { 
         steps { 
-           sh 'echo "Test application..."'
+           bat('echo "Test application..."')
         }
       }
          stage("Package application") { 
          steps { 
-           sh 'echo "package application..."'
+           bat('echo "package application..."')
          }
 
      }
@@ -39,7 +39,7 @@ pipeline {
      stage("Deploy application") { 
       
          steps { 
-           sh 'echo "Deployment application..."'
+           bat('echo "Deployment application..."')
          }
 
      }
