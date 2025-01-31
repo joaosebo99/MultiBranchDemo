@@ -35,12 +35,19 @@ pipeline {
      }
 
      stage("Deploy application") { 
-      
+          when {
+                anyOf {
+                    branch 'PRD'
+                }
+         }
          steps { 
-           bat('echo "Deployment application..."')
+           deploy('1.2.3')
          }
 
      }
 
+  }
+  def deploy(version) {
+    bat('echo "Deployment application..."')
   }
 }
