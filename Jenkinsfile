@@ -47,7 +47,10 @@ pipeline {
      }
 
   }
-  def deploy(version) {
-    bat('echo "Deployment application..."')
-  }
+  
 }
+
+def deploy(version) {
+  bat('echo "Deployment application..."')
+}
+
