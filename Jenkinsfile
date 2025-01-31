@@ -37,7 +37,7 @@ pipeline {
      stage("Deploy application") { 
           when {
                 anyOf {
-                    branch 'PRD'
+                    branch 'Dev'
                 }
          }
          steps { 
